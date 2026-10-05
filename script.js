@@ -1,8 +1,11 @@
-/*
-|--------------------------------------------------------------------------
-| LIENS
-|--------------------------------------------------------------------------
-*/
+/* =========================================
+   S3LY_BOT WEBSITE V2
+========================================= */
+
+
+/* =========================================
+   CONFIGURATION
+========================================= */
 
 const INVITE_URL =
     "https://discord.com/oauth2/authorize?client_id=1551036612396322857&permissions=8&integration_type=0&scope=bot+applications.commands";
@@ -10,223 +13,359 @@ const INVITE_URL =
 const SUPPORT_URL =
     "https://discord.gg/CSFmuNVnar";
 
+const PAYPAL_USERNAME =
+    "NoxAspectYT";
 
-/*
-|--------------------------------------------------------------------------
-| COMMANDES
-|--------------------------------------------------------------------------
-*/
+const MIN_SUPPORT_AMOUNT =
+    0.30;
+
+
+/* =========================================
+   COMMANDES
+========================================= */
 
 const commands = [
 
     {
-        name: "/setup",
-        description: "Configure ton serveur",
-        category: "setup",
+        name: "/settings",
+        description: "Affiche les paramètres du serveur.",
+        category: "config",
         icon: "⚙️"
     },
 
     {
-        name: "/settings",
-        description: "Gérer les paramètres",
-        category: "setup",
-        icon: "🔧"
-    },
-
-    {
         name: "/prefix",
-        description: "Modifier le préfixe",
-        category: "setup",
+        description: "Gère les paramètres de préfixe.",
+        category: "config",
         icon: "⌨️"
     },
 
     {
         name: "/welcome",
-        description: "Configurer les messages de bienvenue",
-        category: "setup",
+        description: "Configure le système de bienvenue.",
+        category: "config",
         icon: "👋"
     },
 
     {
         name: "/activity",
-        description: "Gérer l'activité du bot",
-        category: "setup",
-        icon: "📡"
+        description: "Gère l'activité du bot.",
+        category: "config",
+        icon: "📊"
     },
 
     {
         name: "/hiberne",
-        description: "Activer ou désactiver le mode veille",
-        category: "setup",
+        description: "Active ou désactive le mode veille.",
+        category: "config",
         icon: "💤"
     },
 
     {
+        name: "/emoji",
+        description: "Gère les emojis du serveur.",
+        category: "config",
+        icon: "😀"
+    },
+
+    {
         name: "/clear",
-        description: "Supprimer des messages",
+        description: "Supprime plusieurs messages rapidement.",
         category: "moderation",
         icon: "🧹"
     },
 
     {
         name: "/antibot",
-        description: "Gérer la protection AntiBot",
+        description: "Renforce la protection contre les bots.",
         category: "moderation",
-        icon: "🤖"
+        icon: "🛡️"
     },
 
     {
         name: "/snipe",
-        description: "Voir le dernier message supprimé",
+        description: "Consulte le dernier message supprimé.",
         category: "moderation",
         icon: "🎯"
     },
 
     {
-        name: "/afk",
-        description: "Activer ton statut AFK",
-        category: "moderation",
-        icon: "💤"
-    },
-
-    {
         name: "/reglement",
-        description: "Afficher le règlement",
+        description: "Affiche le règlement du serveur.",
         category: "moderation",
         icon: "📜"
     },
 
     {
+        name: "/afk",
+        description: "Active ton statut AFK.",
+        category: "config",
+        icon: "💤"
+    },
+
+    {
         name: "/8ball",
-        description: "Poser une question à la 8Ball",
+        description: "Pose une question à la boule magique.",
         category: "fun",
-        icon: "🎱"
+        icon: "🔮"
     },
 
     {
         name: "/dice",
-        description: "Lancer un dé",
+        description: "Lance un dé.",
         category: "fun",
         icon: "🎲"
     },
 
     {
         name: "/rank",
-        description: "Afficher ton classement",
+        description: "Affiche ton classement.",
         category: "fun",
         icon: "🏆"
     },
 
     {
         name: "/myinfo",
-        description: "Voir tes informations",
+        description: "Affiche tes informations Discord.",
         category: "fun",
         icon: "👤"
     },
 
     {
         name: "/showuser",
-        description: "Afficher les informations d'un membre",
+        description: "Affiche les informations d'un utilisateur.",
         category: "fun",
         icon: "🔎"
     },
 
     {
         name: "/perf",
-        description: "Voir les performances du bot",
+        description: "Affiche les performances du bot.",
         category: "fun",
         icon: "⚡"
     },
 
     {
         name: "/legit",
-        description: "Vérifier une information",
+        description: "Affiche les informations de légitimité.",
         category: "fun",
         icon: "✅"
     },
 
     {
-        name: "/emoji",
-        description: "Afficher les emojis disponibles",
-        category: "fun",
-        icon: "😀"
+        name: "/invite",
+        description: "Obtiens le lien d'invitation du bot.",
+        category: "support",
+        icon: "🔗"
     },
 
     {
         name: "/ticket",
-        description: "Créer un ticket support",
+        description: "Crée un ticket de support privé.",
         category: "support",
         icon: "🎫"
     },
 
     {
-        name: "/cmd",
-        description: "Afficher une commande",
-        category: "support",
-        icon: "📘"
-    },
-
-    {
         name: "/help",
-        description: "Afficher l'aide",
+        description: "Affiche l'aide de S3LY_BOT.",
         category: "support",
         icon: "❓"
     },
 
     {
         name: "/commands",
-        description: "Ouvrir le menu des commandes",
+        description: "Affiche la liste des commandes.",
         category: "support",
         icon: "📋"
+    },
+
+    {
+        name: "/menu",
+        description: "Ouvre le menu principal du bot.",
+        category: "config",
+        icon: "📱"
+    },
+
+    {
+        name: "/cmd",
+        description: "Ouvre les outils créateur.",
+        category: "fun",
+        icon: "💻"
+    },
+
+    {
+        name: "/uptime",
+        description: "Affiche le temps de fonctionnement du bot.",
+        category: "fun",
+        icon: "⏱️"
     }
 
 ];
 
 
-const categoryNames = {
-    all: "Toutes les commandes",
-    setup: "Configuration",
-    moderation: "Modération",
-    fun: "Fun & Utilitaires",
-    support: "Support"
-};
+/* =========================================
+   DOM
+========================================= */
 
+const navbar =
+    document.getElementById("navbar");
 
-let activeCategory = "all";
+const mobileMenuBtn =
+    document.getElementById("mobileMenuBtn");
 
-
-/*
-|--------------------------------------------------------------------------
-| AFFICHAGE DES COMMANDES
-|--------------------------------------------------------------------------
-*/
-
-const commandGrid =
-    document.getElementById("commandGrid");
+const mobileMenu =
+    document.getElementById("mobileMenu");
 
 const commandSearch =
     document.getElementById("commandSearch");
 
-const commandTitle =
-    document.getElementById("commandTitle");
+const commandsList =
+    document.getElementById("commandsList");
+
+const commandsEmpty =
+    document.getElementById("commandsEmpty");
+
+const commandTabs =
+    document.querySelectorAll(".command-tab");
+
+const backTop =
+    document.getElementById("backTop");
+
+const toast =
+    document.getElementById("toast");
+
+const toastText =
+    document.getElementById("toastText");
+
+const currentYear =
+    document.getElementById("currentYear");
+
+
+/* =========================================
+   ANNÉE
+========================================= */
+
+if (currentYear) {
+    currentYear.textContent =
+        new Date().getFullYear();
+}
+
+
+/* =========================================
+   NAVBAR
+========================================= */
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 30) {
+        navbar?.classList.add("scrolled");
+    } else {
+        navbar?.classList.remove("scrolled");
+    }
+
+    if (window.scrollY > 500) {
+        backTop?.classList.add("visible");
+    } else {
+        backTop?.classList.remove("visible");
+    }
+
+});
+
+
+/* =========================================
+   MOBILE MENU
+========================================= */
+
+mobileMenuBtn?.addEventListener("click", () => {
+
+    mobileMenu?.classList.toggle("open");
+
+    mobileMenuBtn.textContent =
+        mobileMenu?.classList.contains("open")
+            ? "×"
+            : "☰";
+
+});
+
+
+document
+    .querySelectorAll(".mobile-menu a")
+    .forEach((link) => {
+
+        link.addEventListener("click", () => {
+
+            mobileMenu?.classList.remove("open");
+
+            if (mobileMenuBtn) {
+                mobileMenuBtn.textContent = "☰";
+            }
+
+        });
+
+    });
+
+
+/* =========================================
+   REVEAL AU SCROLL
+========================================= */
+
+const revealObserver =
+    new IntersectionObserver(
+        (entries) => {
+
+            entries.forEach((entry) => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add("visible");
+
+                    revealObserver.unobserve(
+                        entry.target
+                    );
+
+                }
+
+            });
+
+        },
+        {
+            threshold: 0.12
+        }
+    );
+
+
+document
+    .querySelectorAll(".reveal")
+    .forEach((element) => {
+
+        revealObserver.observe(element);
+
+    });
+
+
+/* =========================================
+   COMMANDES
+========================================= */
+
+let activeCategory = "all";
 
 
 function renderCommands() {
 
     const search =
-        commandSearch.value.trim().toLowerCase();
+        commandSearch?.value
+            .toLowerCase()
+            .trim() || "";
 
-
-    const filtered =
-        commands.filter(command => {
+    const filteredCommands =
+        commands.filter((command) => {
 
             const categoryMatch =
                 activeCategory === "all" ||
                 command.category === activeCategory;
 
-
             const searchMatch =
-                !search ||
                 command.name
                     .toLowerCase()
                     .includes(search) ||
@@ -234,173 +373,199 @@ function renderCommands() {
                     .toLowerCase()
                     .includes(search);
 
-
             return categoryMatch && searchMatch;
 
         });
 
 
-    commandTitle.textContent =
-        categoryNames[activeCategory];
+    if (!commandsList) {
+        return;
+    }
 
 
-    if (!filtered.length) {
+    commandsList.innerHTML = "";
 
-        commandGrid.innerHTML = `
-            <div style="
-                padding:30px;
-                color:#777789;
-                font-size:11px;
-            ">
-                Aucune commande trouvée.
-            </div>
-        `;
+
+    if (filteredCommands.length === 0) {
+
+        commandsEmpty.style.display =
+            "block";
 
         return;
 
     }
 
 
-    commandGrid.innerHTML =
-        filtered.map(command => {
+    commandsEmpty.style.display =
+        "none";
 
-            return `
-                <div class="command-row">
 
-                    <span class="command-icon">
-                        ${command.icon}
-                    </span>
+    filteredCommands.forEach((command) => {
 
-                    <div>
+        const item =
+            document.createElement("div");
 
-                        <div class="command-name">
-                            ${command.name}
-                        </div>
+        item.className =
+            "command-item";
 
-                        <div class="command-desc">
-                            ${command.description}
-                        </div>
 
+        const categoryNames = {
+
+            config: "Configuration",
+
+            moderation: "Modération",
+
+            fun: "Fun",
+
+            support: "Support"
+
+        };
+
+
+        item.innerHTML = `
+
+            <div class="command-info">
+
+                <div class="command-icon">
+                    ${command.icon}
+                </div>
+
+                <div>
+
+                    <div class="command-name">
+                        ${command.name}
+                    </div>
+
+                    <div class="command-description">
+                        ${command.description}
                     </div>
 
                 </div>
-            `;
 
-        }).join("");
+            </div>
 
-}
+            <div class="command-category">
+                ${categoryNames[command.category] || ""}
+            </div>
 
-
-document
-    .querySelectorAll(".command-tab")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            () => {
-
-                document
-                    .querySelectorAll(".command-tab")
-                    .forEach(item =>
-                        item.classList.remove("active")
-                    );
+        `;
 
 
-                button.classList.add("active");
-
-
-                activeCategory =
-                    button.dataset.category;
-
-
-                renderCommands();
-
-            }
-        );
+        commandsList.appendChild(item);
 
     });
 
-
-commandSearch.addEventListener(
-    "input",
-    renderCommands
-);
+}
 
 
 renderCommands();
 
 
-/*
-|--------------------------------------------------------------------------
-| SETUP INTERACTIF
-|--------------------------------------------------------------------------
-*/
-
-document
-    .querySelectorAll(".setup-option")
-    .forEach(option => {
-
-        option.addEventListener(
-            "click",
-            () => {
-
-                document
-                    .querySelectorAll(".setup-option")
-                    .forEach(item =>
-                        item.classList.remove("selected")
-                    );
+commandSearch?.addEventListener(
+    "input",
+    renderCommands
+);
 
 
-                option.classList.add("selected");
+commandTabs.forEach((tab) => {
 
-            }
-        );
+    tab.addEventListener("click", () => {
+
+        commandTabs.forEach((button) => {
+            button.classList.remove("active");
+        });
+
+        tab.classList.add("active");
+
+        activeCategory =
+            tab.dataset.category || "all";
+
+        renderCommands();
 
     });
 
-
-/*
-|--------------------------------------------------------------------------
-| INVITATION / SUPPORT
-|--------------------------------------------------------------------------
-*/
-
-const toast =
-    document.getElementById("toast");
+});
 
 
-function showToast(message) {
+/* =========================================
+   PAYPAL / SOUTIEN
+========================================= */
 
-    if (!toast) return;
+const supportButtons =
+    document.querySelectorAll(
+        ".support-amount"
+    );
 
+const customSupportInput =
+    document.getElementById(
+        "customSupportAmount"
+    );
 
-    toast.textContent = message;
+const customSupportButton =
+    document.getElementById(
+        "customSupportButton"
+    );
 
-    toast.classList.add("show");
-
-
-    clearTimeout(
-        window.toastTimeout
+const supportError =
+    document.getElementById(
+        "supportError"
     );
 
 
-    window.toastTimeout =
-        setTimeout(
-            () => {
+function showSupportError(message) {
 
-                toast.classList.remove("show");
+    if (!supportError) {
+        return;
+    }
 
-            },
-            3500
-        );
+    supportError.textContent =
+        message;
 
 }
 
 
-function openLink(url) {
+function clearSupportError() {
+
+    if (supportError) {
+        supportError.textContent = "";
+    }
+
+}
+
+
+function goToPayPal(amount) {
+
+    const numericAmount =
+        Number(amount);
+
+
+    if (
+        !Number.isFinite(numericAmount) ||
+        numericAmount < MIN_SUPPORT_AMOUNT
+    ) {
+
+        showSupportError(
+            "Le montant minimum est de 0,30 €."
+        );
+
+        return;
+
+    }
+
+
+    clearSupportError();
+
+
+    const formattedAmount =
+        numericAmount.toFixed(2);
+
+
+    const paypalUrl =
+        `https://paypal.me/${PAYPAL_USERNAME}/${formattedAmount}`;
+
 
     window.open(
-        url,
+        paypalUrl,
         "_blank",
         "noopener,noreferrer"
     );
@@ -408,119 +573,269 @@ function openLink(url) {
 }
 
 
-/*
-|--------------------------------------------------------------------------
-| BOUTON INVITER LE BOT
-|--------------------------------------------------------------------------
-*/
+/* Montants prédéfinis */
 
-document
-    .querySelectorAll("[data-invite]")
-    .forEach(button => {
+supportButtons.forEach((button) => {
 
-        button.addEventListener(
-            "click",
-            event => {
+    button.addEventListener("click", () => {
 
-                event.preventDefault();
+        const amount =
+            button.dataset.amount;
 
-                openLink(
-                    INVITE_URL
-                );
 
-            }
+        button.classList.add(
+            "support-clicked"
         );
+
+
+        setTimeout(() => {
+
+            button.classList.remove(
+                "support-clicked"
+            );
+
+        }, 300);
+
+
+        goToPayPal(amount);
 
     });
 
-
-/*
-|--------------------------------------------------------------------------
-| BOUTON SERVEUR SUPPORT
-|--------------------------------------------------------------------------
-*/
-
-document
-    .querySelectorAll("[data-support]")
-    .forEach(button => {
-
-        button.addEventListener(
-            "click",
-            event => {
-
-                event.preventDefault();
-
-                openLink(
-                    SUPPORT_URL
-                );
-
-            }
-        );
-
-    });
+});
 
 
-/*
-|--------------------------------------------------------------------------
-| NAVBAR
-|--------------------------------------------------------------------------
-*/
+/* Montant personnalisé */
 
-const navbar =
-    document.getElementById("navbar");
-
-
-window.addEventListener(
-    "scroll",
+customSupportButton?.addEventListener(
+    "click",
     () => {
 
-        navbar.classList.toggle(
-            "scrolled",
-            window.scrollY > 20
-        );
+        if (!customSupportInput) {
+            return;
+        }
 
-    },
-    { passive: true }
+
+        const rawValue =
+            customSupportInput.value
+                .replace(",", ".")
+                .trim();
+
+
+        const amount =
+            parseFloat(rawValue);
+
+
+        if (
+            !Number.isFinite(amount) ||
+            amount < MIN_SUPPORT_AMOUNT
+        ) {
+
+            showSupportError(
+                "Entre un montant d'au moins 0,30 €."
+            );
+
+
+            customSupportInput.focus();
+
+
+            customSupportInput.classList.add(
+                "support-input-error"
+            );
+
+
+            setTimeout(() => {
+
+                customSupportInput.classList.remove(
+                    "support-input-error"
+                );
+
+            }, 500);
+
+
+            return;
+
+        }
+
+
+        clearSupportError();
+
+        goToPayPal(amount);
+
+    }
 );
 
 
-/*
-|--------------------------------------------------------------------------
-| MENU MOBILE
-|--------------------------------------------------------------------------
-*/
+/* Entrée = continuer */
 
-const mobileMenu =
-    document.getElementById("mobileMenu");
+customSupportInput?.addEventListener(
+    "keydown",
+    (event) => {
 
+        if (event.key === "Enter") {
 
-if (mobileMenu) {
-
-    mobileMenu.addEventListener(
-        "click",
-        () => {
-
-            navbar.classList.toggle(
-                "open"
-            );
+            customSupportButton?.click();
 
         }
+
+    }
+);
+
+
+/* =========================================
+   BOUTONS DISCORD
+========================================= */
+
+document
+    .querySelectorAll(
+        `a[href="${INVITE_URL}"]`
+    )
+    .forEach((button) => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                showToast(
+                    "Ouverture de l'invitation Discord..."
+                );
+
+            }
+        );
+
+    });
+
+
+document
+    .querySelectorAll(
+        `a[href="${SUPPORT_URL}"]`
+    )
+    .forEach((button) => {
+
+        button.addEventListener(
+            "click",
+            () => {
+
+                showToast(
+                    "Ouverture du serveur support..."
+                );
+
+            }
+        );
+
+    });
+
+
+/* =========================================
+   TOAST
+========================================= */
+
+let toastTimeout;
+
+
+function showToast(message) {
+
+    if (!toast || !toastText) {
+        return;
+    }
+
+
+    toastText.textContent =
+        message;
+
+
+    toast.classList.add(
+        "visible"
     );
+
+
+    clearTimeout(toastTimeout);
+
+
+    toastTimeout =
+        setTimeout(() => {
+
+            toast.classList.remove(
+                "visible"
+            );
+
+        }, 3000);
 
 }
 
 
+/* =========================================
+   BACK TO TOP
+========================================= */
+
+backTop?.addEventListener(
+    "click",
+    () => {
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    }
+);
+
+
+/* =========================================
+   LIENS INTERNES
+========================================= */
+
 document
-    .querySelectorAll("nav a")
-    .forEach(link => {
+    .querySelectorAll('a[href^="#"]')
+    .forEach((link) => {
 
         link.addEventListener(
             "click",
-            () => {
+            (event) => {
 
-                navbar.classList.remove(
-                    "open"
-                );
+                const targetId =
+                    link.getAttribute("href");
+
+
+                if (
+                    !targetId ||
+                    targetId === "#"
+                ) {
+                    return;
+                }
+
+
+                const target =
+                    document.querySelector(
+                        targetId
+                    );
+
+
+                if (!target) {
+                    return;
+                }
+
+
+                event.preventDefault();
+
+
+                const offset =
+                    navbar?.offsetHeight || 76;
+
+
+                const targetPosition =
+                    target.getBoundingClientRect().top +
+                    window.scrollY -
+                    offset -
+                    10;
+
+
+                window.scrollTo({
+
+                    top: targetPosition,
+
+                    behavior: "smooth"
+
+                });
 
             }
         );
@@ -528,41 +843,53 @@ document
     });
 
 
-/*
-|--------------------------------------------------------------------------
-| NAVIGATION ACTIVE
-|--------------------------------------------------------------------------
-*/
+/* =========================================
+   NAVIGATION ACTIVE
+========================================= */
 
 const sections =
     document.querySelectorAll(
         "main section[id]"
     );
 
-
 const navLinks =
     document.querySelectorAll(
-        "nav a"
+        ".nav-link"
     );
 
 
-const navObserver =
+const sectionObserver =
     new IntersectionObserver(
-        entries => {
+        (entries) => {
 
-            entries.forEach(entry => {
+            entries.forEach((entry) => {
 
-                if (!entry.isIntersecting)
+                if (!entry.isIntersecting) {
                     return;
+                }
 
 
-                navLinks.forEach(link => {
+                const id =
+                    entry.target.id;
 
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") ===
-                        "#" + entry.target.id
+
+                navLinks.forEach((link) => {
+
+                    link.classList.remove(
+                        "active"
                     );
+
+
+                    if (
+                        link.getAttribute("href") ===
+                        `#${id}`
+                    ) {
+
+                        link.classList.add(
+                            "active"
+                        );
+
+                    }
 
                 });
 
@@ -570,112 +897,48 @@ const navObserver =
 
         },
         {
-            rootMargin:
-                "-35% 0px -55% 0px"
+            rootMargin: "-35% 0px -55% 0px"
         }
     );
 
 
-sections.forEach(section =>
-    navObserver.observe(section)
-);
+sections.forEach((section) => {
+
+    sectionObserver.observe(section);
+
+});
 
 
-/*
-|--------------------------------------------------------------------------
-| ANIMATIONS AU SCROLL
-|--------------------------------------------------------------------------
-*/
+/* =========================================
+   PARALLAX LÉGER DU DASHBOARD
+========================================= */
 
-const revealObserver =
-    new IntersectionObserver(
-        entries => {
-
-            entries.forEach(entry => {
-
-                if (!entry.isIntersecting)
-                    return;
+const dashboard =
+    document.querySelector(".dashboard");
 
 
-                entry.target.classList.add(
-                    "visible"
-                );
-
-
-                revealObserver.unobserve(
-                    entry.target
-                );
-
-            });
-
-        },
-        {
-            threshold: .12
-        }
-    );
-
-
-document
-    .querySelectorAll(".reveal")
-    .forEach(element =>
-        revealObserver.observe(element)
-    );
-
-
-/*
-|--------------------------------------------------------------------------
-| RETOUR EN HAUT
-|--------------------------------------------------------------------------
-*/
-
-const topButton =
-    document.getElementById("topButton");
-
-
-if (topButton) {
+if (dashboard && window.innerWidth > 900) {
 
     window.addEventListener(
-        "scroll",
-        () => {
+        "mousemove",
+        (event) => {
 
-            topButton.classList.toggle(
-                "show",
-                window.scrollY > 500
-            );
+            const x =
+                (event.clientX /
+                    window.innerWidth -
+                    0.5) * 2;
 
-        },
-        { passive: true }
-    );
+            const y =
+                (event.clientY /
+                    window.innerHeight -
+                    0.5) * 2;
 
 
-    topButton.addEventListener(
-        "click",
-        () => {
-
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
-            });
+            dashboard.style.transform =
+                `rotateY(${-4 + x * 2}deg)
+                 rotateX(${2 - y * 1.5}deg)`;
 
         }
     );
-
-}
-
-
-/*
-|--------------------------------------------------------------------------
-| ANNÉE
-|--------------------------------------------------------------------------
-*/
-
-const year =
-    document.getElementById("year");
-
-
-if (year) {
-
-    year.textContent =
-        new Date().getFullYear();
 
 }

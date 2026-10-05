@@ -3,692 +3,921 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="S3LY_BOT — Le bot Discord tout-en-un.">
-    <title>S3LY_BOT — Discord Bot</title>
+
+    <title>S3LY_BOT — Le bot Discord tout-en-un</title>
+    <meta
+        name="description"
+        content="S3LY_BOT — Le bot Discord tout-en-un pour gérer, protéger et automatiser ton serveur."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="background"></div>
-<div class="grid"></div>
-
-<header class="navbar" id="navbar">
-    <a href="#home" class="logo">
-        <span class="logo-box">S3</span>
-        <span>S3LY<span class="purple">_BOT</span></span>
-    </a>
-
-    <nav id="nav">
-        <a href="#home">Accueil</a>
-        <a href="#features">Fonctionnalités</a>
-        <a href="#commands">Commandes</a>
-        <a href="#setup">Setup</a>
-        <a href="#security">Sécurité</a>
-    </nav>
-
-    <div class="nav-buttons">
-        <a href="#commands" class="nav-command">Commandes</a>
-        <a href="#" class="btn primary" data-invite>Ajouter le bot ↗</a>
-    </div>
-
-    <button class="mobile-menu" id="mobileMenu">☰</button>
-</header>
-
-<main>
-
-<section class="hero section" id="home">
-
-    <div class="hero-text reveal">
-
-        <div class="status">
-            <span></span>
-            S3LY_BOT EST EN LIGNE
-        </div>
-
-        <h1>
-            Le bot Discord<br>
-            <span>qui fait tout.</span>
-        </h1>
-
-        <p>
-            Gère ton serveur, protège ta communauté et automatise
-            les tâches importantes avec S3LY_BOT.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#" class="btn primary big" data-invite>
-                Ajouter S3LY_BOT ↗
-            </a>
-
-            <a href="#features" class="btn secondary big">
-                Découvrir le bot ↓
-            </a>
-        </div>
-
-        <div class="stats">
-            <div>
-                <strong>24+</strong>
-                <small>COMMANDES</small>
-            </div>
-
-            <i></i>
-
-            <div>
-                <strong>24/7</strong>
-                <small>DISPONIBLE</small>
-            </div>
-
-            <i></i>
-
-            <div>
-                <strong>∞</strong>
-                <small>POSSIBILITÉS</small>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="dashboard-container reveal delay">
-
-        <div class="dashboard">
-
-            <div class="dashboard-top">
-                <div class="dots">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <span>S3LY_BOT • Dashboard</span>
-
-                <b>● ONLINE</b>
-            </div>
-
-            <div class="dashboard-body">
-
-                <aside>
-                    <div class="server">S3</div>
-                    <div class="side active"></div>
-                    <div class="side"></div>
-                    <div class="side"></div>
-                    <div class="side"></div>
-                </aside>
-
-                <div class="dashboard-content">
-
-                    <div class="dashboard-title">
-                        <div>
-                            <small>Serveur</small>
-                            <h3>Ma Communauté</h3>
-                        </div>
-
-                        <span>● En ligne</span>
-                    </div>
-
-                    <div class="dashboard-cards">
-
-                        <div class="dashboard-card">
-                            <small>👥 Membres</small>
-                            <strong>1,248</strong>
-                            <em>+12 cette semaine</em>
-                        </div>
-
-                        <div class="dashboard-card">
-                            <small>🛡️ Sécurité</small>
-                            <strong>Active</strong>
-                            <em>AntiBot + AntiJoins</em>
-                        </div>
-
-                        <div class="dashboard-card">
-                            <small>🎫 Tickets</small>
-                            <strong>08</strong>
-                            <em>2 en attente</em>
-                        </div>
-
-                        <div class="dashboard-card">
-                            <small>⚡ Uptime</small>
-                            <strong>99.9%</strong>
-                            <em>Stable</em>
-                        </div>
-
-                    </div>
-
-                    <div class="activity">
-
-                        <div class="activity-title">
-                            <span></span>
-                            Activité récente
-                        </div>
-
-                        <p><b>›</b> <strong>/setup</strong> configuration terminée</p>
-                        <p><b>›</b> Nouveau membre accueilli <em>+1</em></p>
-                        <p><b>›</b> Protection AntiBot <em>OK</em></p>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="floating-card card-one">
-            🛡️ Serveur protégé
-        </div>
-
-        <div class="floating-card card-two">
-            ⚡ Réponse rapide
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="trusted section reveal">
-
-    <small>UNE BOÎTE À OUTILS POUR TON SERVEUR</small>
-
-    <div>
-        <span>MODÉRATION</span>
-        <span>SÉCURITÉ</span>
-        <span>COMMUNAUTÉ</span>
-        <span>AUTOMATISATION</span>
-        <span>SUPPORT</span>
-    </div>
-
-</section>
-
-
-<section class="section" id="features">
-
-    <div class="section-title reveal">
-        <label>FONCTIONNALITÉS</label>
-
-        <h2>
-            Tout ce qu'il faut,<br>
-            <span>au même endroit.</span>
-        </h2>
-
-        <p>
-            S3LY_BOT rassemble les outils essentiels pour rendre
-            ton serveur plus propre, plus sûr et plus simple à gérer.
-        </p>
-    </div>
-
-
-    <div class="features">
-
-        <article class="feature large reveal">
-
-            <div class="feature-icon">🛡️</div>
-
-            <label>PROTECTION</label>
-
-            <h3>Sécurité intelligente</h3>
-
-            <p>
-                AntiBot, AntiJoins et contrôle des nouveaux comptes
-                pour protéger ta communauté.
-            </p>
-
-            <div class="security-list">
-                <span>AntiBot <b>ACTIF</b></span>
-                <span>AntiJoins <b>ACTIF</b></span>
-                <span>Logs privés <b>ACTIF</b></span>
-            </div>
-
-        </article>
-
-
-        <article class="feature reveal">
-
-            <div class="feature-icon">🎫</div>
-
-            <label>SUPPORT</label>
-
-            <h3>Tickets</h3>
-
-            <p>
-                Crée des tickets privés pour aider rapidement
-                les membres de ton serveur.
-            </p>
-
-            <div class="fake-ticket">
-                🎫 Ticket #024
-                <b>OUVERT</b>
-            </div>
-
-        </article>
-
-
-        <article class="feature reveal">
-
-            <div class="feature-icon">👋</div>
-
-            <label>COMMUNAUTÉ</label>
-
-            <h3>Bienvenue & auto-rôle</h3>
-
-            <p>
-                Accueille automatiquement les nouveaux membres
-                et attribue le rôle configuré.
-            </p>
-
-        </article>
-
-
-        <article class="feature reveal">
-
-            <div class="feature-icon">🧹</div>
-
-            <label>AUTOMATISATION</label>
-
-            <h3>Auto-Delete</h3>
-
-            <p>
-                Supprime automatiquement les messages après
-                le délai configuré.
-            </p>
-
-        </article>
-
-
-        <article class="feature reveal">
-
-            <div class="feature-icon">💤</div>
-
-            <label>MODE VEILLE</label>
-
-            <h3>Hibernation</h3>
-
-            <p>
-                Mets les fonctionnalités automatiques en pause
-                quand ton serveur n'en a pas besoin.
-            </p>
-
-        </article>
-
-
-        <article class="feature reveal">
-
-            <div class="feature-icon">⚙️</div>
-
-            <label>CONFIGURATION</label>
-
-            <h3>Setup guidé</h3>
-
-            <p>
-                Configure ton serveur grâce à deux modes simples
-                et personnalisables.
-            </p>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<section class="commands-section section" id="commands">
-
-    <div class="section-title reveal">
-
-        <label>COMMANDES</label>
-
-        <h2>
-            Des commandes<br>
-            <span>simples et utiles.</span>
-        </h2>
-
-        <p>
-            Retrouve rapidement les outils disponibles
-            sur S3LY_BOT.
-        </p>
-
-    </div>
-
-
-    <div class="commands-layout">
-
-        <div class="command-tabs reveal">
-
-            <button class="command-tab active" data-category="all">
-                ✦ <span>Toutes</span> <b>24+</b>
-            </button>
-
-            <button class="command-tab" data-category="setup">
-                ⚙️ <span>Configuration</span> <b>6</b>
-            </button>
-
-            <button class="command-tab" data-category="moderation">
-                🛡️ <span>Modération</span> <b>5</b>
-            </button>
-
-            <button class="command-tab" data-category="fun">
-                🎮 <span>Fun & Utilitaires</span> <b>8</b>
-            </button>
-
-            <button class="command-tab" data-category="support">
-                🎫 <span>Support</span> <b>3</b>
-            </button>
-
-        </div>
-
-
-        <div class="commands-panel reveal">
-
-            <div class="commands-header">
-
-                <div>
-                    <small>LISTE DES COMMANDES</small>
-                    <h3 id="commandTitle">Toutes les commandes</h3>
-                </div>
-
-                <div class="search">
-                    🔎
-                    <input
-                        type="text"
-                        id="commandSearch"
-                        placeholder="Rechercher..."
-                    >
-                </div>
-
-            </div>
-
-            <div class="command-grid" id="commandGrid"></div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="setup section" id="setup">
-
-    <div class="setup-preview reveal">
-
-        <div class="setup-box">
-
-            <header>
-                <span>⚙️ Configuration de S3LY_BOT</span>
-                <small>ÉTAPE 1 / 4</small>
-            </header>
-
-            <div class="setup-content">
-
-                <p>Quel type de serveur veux-tu configurer ?</p>
-
-                <div class="setup-options">
-
-                    <button class="setup-option selected">
-                        <strong>🎮</strong>
-                        <b>Gaming</b>
-                        <small>Jeux & compétitions</small>
-                    </button>
-
-                    <button class="setup-option">
-                        <strong>👥</strong>
-                        <b>Communauté</b>
-                        <small>Discussions & partage</small>
-                    </button>
-
-                    <button class="setup-option">
-                        <strong>🚀</strong>
-                        <b>Projet</b>
-                        <small>Équipe & travail</small>
-                    </button>
-
-                    <button class="setup-option">
-                        <strong>✨</strong>
-                        <b>Autre</b>
-                        <small>Configuration libre</small>
-                    </button>
-
-                </div>
-
-                <div class="progress">
-                    <span></span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-
-    <div class="setup-text reveal">
-
-        <label>SETUP</label>
-
-        <h2>
-            Configure ton serveur<br>
-            <span>sans prise de tête.</span>
-        </h2>
-
-        <p>
-            Avec <b>/setup</b>, S3LY_BOT te guide pour choisir
-            le style, la sécurité, les tickets, les logs,
-            le système de bienvenue et bien plus.
-        </p>
-
-        <div class="mode">
-
-            <article>
-                <span>01</span>
-                <div>
-                    <h3>Mode rapide</h3>
-                    <p>Une configuration simple pour démarrer rapidement.</p>
-                </div>
-            </article>
-
-            <article class="selected">
-                <span>02</span>
-                <div>
-                    <h3>Mode personnalisé</h3>
-                    <p>
-                        Choisis précisément les fonctionnalités
-                        de ton serveur.
-                    </p>
-                </div>
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<section class="security-section section" id="security">
-
-    <div class="section-title reveal">
-
-        <label>SÉCURITÉ</label>
-
-        <h2>
-            Ton serveur.<br>
-            <span>Tes règles.</span>
-        </h2>
-
-        <p>
-            Des outils pensés pour garder le contrôle sans
-            compliquer la gestion quotidienne.
-        </p>
-
-    </div>
-
-
-    <div class="security-cards">
-
-        <article class="security-card reveal">
-
-            <small>01</small>
-
-            <h3>AntiBot</h3>
-
-            <p>
-                Filtre les bots indésirables et renforce
-                la protection de ton serveur.
-            </p>
-
-            <b>● PROTECTION ACTIVE</b>
-
-        </article>
-
-
-        <article class="security-card reveal">
-
-            <small>02</small>
-
-            <h3>AntiJoins</h3>
-
-            <p>
-                Surveille les arrivées et applique les
-                paramètres de sécurité configurés.
-            </p>
-
-            <b>● SURVEILLANCE ACTIVE</b>
-
-        </article>
-
-
-        <article class="security-card reveal">
-
-            <small>03</small>
-
-            <h3>Logs privés</h3>
-
-            <p>
-                Centralise les informations importantes dans
-                un espace réservé au staff.
-            </p>
-
-            <b>● ACCÈS STAFF</b>
-
-        </article>
-
-    </div>
-
-</section>
-
-
-<section class="cta reveal">
-
-    <div class="cta-glow"></div>
-
-    <label>PRÊT À COMMENCER ?</label>
-
-    <h2>
-        Ton serveur mérite<br>
-        <span>mieux qu'un simple bot.</span>
-    </h2>
-
-    <p>
-        Ajoute S3LY_BOT et commence à configurer ton serveur
-        en quelques clics.
-    </p>
-
-    <div>
-
-        <a href="#" class="btn primary big" data-invite>
-            Ajouter S3LY_BOT ↗
-        </a>
-
-        <a href="#" class="btn secondary big" data-support>
-            Serveur support ↗
-        </a>
-
-        <a
-            href="https://paypal.me/NoxAspectYT"
-            class="btn secondary big"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            💜 Soutenir le projet
-        </a>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<footer>
-
-    <div class="footer-top">
-
-        <div class="footer-brand">
+    <!-- BACKGROUND -->
+    <div class="background-grid"></div>
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+    <div class="background-glow glow-three"></div>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
 
             <a href="#home" class="logo">
-                <span class="logo-box">S3</span>
-                <span>S3LY<span class="purple">_BOT</span></span>
+                <div class="logo-icon">S3</div>
+                <span>S3LY_BOT</span>
             </a>
 
-            <p>
-                Le bot Discord tout-en-un pour gérer,
-                protéger et faire grandir ta communauté.
-            </p>
+            <nav class="nav-links">
+                <a href="#home" class="nav-link active">Accueil</a>
+                <a href="#features" class="nav-link">Fonctionnalités</a>
+                <a href="#commands" class="nav-link">Commandes</a>
+                <a href="#security" class="nav-link">Sécurité</a>
+                <a href="#support" class="nav-link">Soutenir</a>
+            </nav>
 
-        </div>
+            <div class="nav-actions">
+                <a href="#commands" class="nav-command-btn">
+                    Commandes
+                </a>
 
-
-        <div class="footer-links">
-
-            <div>
-                <b>Navigation</b>
-                <a href="#home">Accueil</a>
-                <a href="#features">Fonctionnalités</a>
-                <a href="#commands">Commandes</a>
-                <a href="#setup">Setup</a>
-            </div>
-
-            <div>
-                <b>Communauté</b>
-                <a href="#" data-support>Support Discord</a>
-                <a href="#" data-invite>Ajouter le bot</a>
-            </div>
-
-            <div>
-                <b>Projet</b>
-                <a href="#security">Sécurité</a>
-                <a href="#commands">Commandes</a>
                 <a
-                    href="https://paypal.me/NoxAspectYT"
+                    href="https://discord.com/oauth2/authorize?client_id=1551036612396322857&permissions=8&integration_type=0&scope=bot+applications.commands"
                     target="_blank"
-                    rel="noopener noreferrer"
+                    class="nav-invite-btn"
                 >
-                    💜 Soutenir le projet
+                    Ajouter le bot
+                    <span>↗</span>
                 </a>
             </div>
 
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                ☰
+            </button>
+
         </div>
 
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#home">Accueil</a>
+            <a href="#features">Fonctionnalités</a>
+            <a href="#commands">Commandes</a>
+            <a href="#security">Sécurité</a>
+            <a href="#support">Soutenir</a>
+
+            <a
+                href="https://discord.com/oauth2/authorize?client_id=1551036612396322857&permissions=8&integration_type=0&scope=bot+applications.commands"
+                target="_blank"
+                class="mobile-invite"
+            >
+                Ajouter S3LY_BOT ↗
+            </a>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+    <main id="home">
+
+        <section class="hero">
+
+            <div class="hero-content reveal">
+
+                <div class="online-badge">
+                    <span class="online-dot"></span>
+                    S3LY_BOT EST EN LIGNE
+                </div>
+
+                <h1>
+                    Le bot Discord
+                    <span>qui fait tout.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Gère ton serveur, protège ta communauté et automatise
+                    les tâches importantes avec S3LY_BOT.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="https://discord.com/oauth2/authorize?client_id=1551036612396322857&permissions=8&integration_type=0&scope=bot+applications.commands"
+                        target="_blank"
+                        class="primary-btn"
+                    >
+                        <span>Ajouter S3LY_BOT</span>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#features" class="secondary-btn">
+                        Découvrir le bot
+                        <span>↓</span>
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+                        <strong>25+</strong>
+                        <span>COMMANDES</span>
+                    </div>
+
+                    <div class="stat-separator"></div>
+
+                    <div class="hero-stat">
+                        <strong>24/7</strong>
+                        <span>DISPONIBLE</span>
+                    </div>
+
+                    <div class="stat-separator"></div>
+
+                    <div class="hero-stat">
+                        <strong>∞</strong>
+                        <span>POSSIBILITÉS</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- DASHBOARD VISUEL -->
+            <div class="hero-dashboard-wrap reveal">
+
+                <div class="dashboard-glow"></div>
+
+                <div class="floating-card floating-card-one">
+                    <span>🛡️</span>
+                    <div>
+                        <strong>Protection active</strong>
+                        <small>Serveur sécurisé</small>
+                    </div>
+                </div>
+
+                <div class="floating-card floating-card-two">
+                    <span>⚡</span>
+                    <div>
+                        <strong>99.9%</strong>
+                        <small>Uptime</small>
+                    </div>
+                </div>
+
+                <div class="dashboard">
+
+                    <div class="dashboard-top">
+
+                        <div class="dashboard-brand">
+                            <div class="dashboard-logo">S3</div>
+
+                            <div>
+                                <small>S3LY_BOT • Dashboard</small>
+                                <strong>Ma Communauté</strong>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-online">
+                            <span></span>
+                            ONLINE
+                        </div>
+
+                    </div>
+
+                    <div class="dashboard-server">
+
+                        <div class="server-header">
+                            <div>
+                                <small>SERVEUR</small>
+                                <h3>Ma Communauté</h3>
+                            </div>
+
+                            <div class="server-status">
+                                ● En ligne
+                            </div>
+                        </div>
+
+                        <div class="dashboard-cards">
+
+                            <div class="mini-dashboard-card">
+                                <span>👥</span>
+                                <small>Membres</small>
+                                <strong>1,248</strong>
+                                <em>+12 cette semaine</em>
+                            </div>
+
+                            <div class="mini-dashboard-card">
+                                <span>🛡️</span>
+                                <small>Sécurité</small>
+                                <strong>Active</strong>
+                                <em>AntiBot + AntiJoins</em>
+                            </div>
+
+                            <div class="mini-dashboard-card">
+                                <span>🎫</span>
+                                <small>Tickets</small>
+                                <strong>08</strong>
+                                <em>2 en attente</em>
+                            </div>
+
+                            <div class="mini-dashboard-card">
+                                <span>⚡</span>
+                                <small>Uptime</small>
+                                <strong>99.9%</strong>
+                                <em>Stable</em>
+                            </div>
+
+                        </div>
+
+                        <div class="activity-panel">
+
+                            <div class="activity-title">
+                                <span>Activité récente</span>
+                                <small>LIVE</small>
+                            </div>
+
+                            <div class="activity-item">
+                                <span class="activity-icon purple">⚙️</span>
+                                <div>
+                                    <strong>Configuration modifiée</strong>
+                                    <small>Il y a quelques secondes</small>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <span class="activity-icon green">👋</span>
+                                <div>
+                                    <strong>Nouveau membre accueilli</strong>
+                                    <small>+1 membre</small>
+                                </div>
+                            </div>
+
+                            <div class="activity-item">
+                                <span class="activity-icon blue">🛡️</span>
+                                <div>
+                                    <strong>Protection AntiBot</strong>
+                                    <small>Système opérationnel</small>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- TRUST BAR -->
+        <section class="trust-section reveal">
+
+            <div class="trust-line"></div>
+
+            <div class="trust-items">
+                <span>🛡️ PROTECTION</span>
+                <span>🎫 SUPPORT</span>
+                <span>👋 COMMUNAUTÉ</span>
+                <span>⚡ AUTOMATISATION</span>
+                <span>⚙️ CONFIGURATION</span>
+            </div>
+
+            <div class="trust-line"></div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="section features-section" id="features">
+
+            <div class="section-header reveal">
+
+                <span class="section-label">FONCTIONNALITÉS</span>
+
+                <h2>
+                    Tout ce qu'il faut,
+                    <span>au même endroit.</span>
+                </h2>
+
+                <p>
+                    S3LY_BOT rassemble les outils essentiels pour rendre
+                    ton serveur plus propre, plus sûr et plus simple à gérer.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <article class="feature-card large reveal">
+
+                    <div class="feature-top">
+                        <div class="feature-icon purple-icon">🛡️</div>
+                        <span>01</span>
+                    </div>
+
+                    <div>
+                        <small>PROTECTION</small>
+                        <h3>Sécurité intelligente</h3>
+
+                        <p>
+                            AntiBot, AntiJoins et outils de protection
+                            pour renforcer la sécurité de ta communauté.
+                        </p>
+                    </div>
+
+                    <div class="feature-status-list">
+                        <span>● AntiBot ACTIF</span>
+                        <span>● AntiJoins ACTIF</span>
+                        <span>● Logs privés ACTIF</span>
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-top">
+                        <div class="feature-icon blue-icon">🎫</div>
+                        <span>02</span>
+                    </div>
+
+                    <small>SUPPORT</small>
+                    <h3>Tickets</h3>
+
+                    <p>
+                        Crée des tickets privés pour aider rapidement
+                        les membres de ton serveur.
+                    </p>
+
+                    <div class="ticket-preview">
+                        🎫 Ticket #024
+                        <span>OUVERT</span>
+                    </div>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-top">
+                        <div class="feature-icon green-icon">👋</div>
+                        <span>03</span>
+                    </div>
+
+                    <small>COMMUNAUTÉ</small>
+                    <h3>Bienvenue & auto-rôle</h3>
+
+                    <p>
+                        Accueille automatiquement les nouveaux membres
+                        et attribue le rôle configuré.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-top">
+                        <div class="feature-icon orange-icon">🧹</div>
+                        <span>04</span>
+                    </div>
+
+                    <small>AUTOMATISATION</small>
+                    <h3>Auto-Delete</h3>
+
+                    <p>
+                        Automatise le nettoyage des messages selon
+                        les paramètres de ton serveur.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-top">
+                        <div class="feature-icon cyan-icon">💤</div>
+                        <span>05</span>
+                    </div>
+
+                    <small>MODE VEILLE</small>
+                    <h3>Hibernation</h3>
+
+                    <p>
+                        Mets certaines automatisations en pause lorsque
+                        ton serveur n'en a pas besoin.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card reveal">
+
+                    <div class="feature-top">
+                        <div class="feature-icon pink-icon">⚙️</div>
+                        <span>06</span>
+                    </div>
+
+                    <small>CONFIGURATION</small>
+                    <h3>Gestion simple</h3>
+
+                    <p>
+                        Configure les fonctionnalités de S3LY_BOT
+                        directement avec ses commandes.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMMANDS -->
+        <section class="section commands-section" id="commands">
+
+            <div class="section-header reveal">
+
+                <span class="section-label">COMMANDES</span>
+
+                <h2>
+                    Des commandes
+                    <span>simples et utiles.</span>
+                </h2>
+
+                <p>
+                    Retrouve rapidement les outils disponibles
+                    sur S3LY_BOT.
+                </p>
+
+            </div>
+
+
+            <div class="commands-box reveal">
+
+                <div class="commands-toolbar">
+
+                    <div class="command-tabs">
+
+                        <button class="command-tab active" data-category="all">
+                            Toutes
+                            <span>25+</span>
+                        </button>
+
+                        <button class="command-tab" data-category="config">
+                            Configuration
+                        </button>
+
+                        <button class="command-tab" data-category="moderation">
+                            Modération
+                        </button>
+
+                        <button class="command-tab" data-category="fun">
+                            Fun
+                        </button>
+
+                        <button class="command-tab" data-category="support">
+                            Support
+                        </button>
+
+                    </div>
+
+                    <div class="command-search">
+                        <span>⌕</span>
+                        <input
+                            type="text"
+                            id="commandSearch"
+                            placeholder="Rechercher..."
+                        >
+                    </div>
+
+                </div>
+
+
+                <div class="commands-list" id="commandsList"></div>
+
+                <div class="commands-empty" id="commandsEmpty">
+                    Aucune commande trouvée.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECURITY -->
+        <section class="section security-section" id="security">
+
+            <div class="security-layout">
+
+                <div class="security-content reveal">
+
+                    <span class="section-label">SÉCURITÉ</span>
+
+                    <h2>
+                        Ton serveur.
+                        <span>Tes règles.</span>
+                    </h2>
+
+                    <p>
+                        Des outils pensés pour garder le contrôle
+                        sans compliquer la gestion quotidienne.
+                    </p>
+
+                    <a href="#support" class="text-button">
+                        Découvrir S3LY_BOT
+                        <span>→</span>
+                    </a>
+
+                </div>
+
+
+                <div class="security-cards">
+
+                    <article class="security-card reveal">
+
+                        <div class="security-number">01</div>
+
+                        <div class="security-icon">🛡️</div>
+
+                        <h3>AntiBot</h3>
+
+                        <p>
+                            Filtre les bots indésirables et renforce
+                            la protection de ton serveur.
+                        </p>
+
+                        <span class="security-active">
+                            ● PROTECTION ACTIVE
+                        </span>
+
+                    </article>
+
+
+                    <article class="security-card reveal">
+
+                        <div class="security-number">02</div>
+
+                        <div class="security-icon">👥</div>
+
+                        <h3>AntiJoins</h3>
+
+                        <p>
+                            Surveille les arrivées et applique
+                            les paramètres de sécurité configurés.
+                        </p>
+
+                        <span class="security-active">
+                            ● SURVEILLANCE ACTIVE
+                        </span>
+
+                    </article>
+
+
+                    <article class="security-card reveal">
+
+                        <div class="security-number">03</div>
+
+                        <div class="security-icon">🔒</div>
+
+                        <h3>Logs privés</h3>
+
+                        <p>
+                            Centralise les informations importantes
+                            dans un espace réservé au staff.
+                        </p>
+
+                        <span class="security-active">
+                            ● ACCÈS STAFF
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SUPPORT -->
+        <section class="support-section" id="support">
+
+            <div class="support-glow"></div>
+
+            <div class="support-container">
+
+                <div class="support-header reveal">
+
+                    <span class="section-label">💜 SOUTIEN</span>
+
+                    <h2>
+                        Soutenir
+                        <span>S3LY_BOT</span>
+                    </h2>
+
+                    <p>
+                        Tu apprécies S3LY_BOT ? Tu peux soutenir le projet
+                        avec le montant de ton choix. Chaque contribution
+                        aide à améliorer le bot.
+                    </p>
+
+                </div>
+
+
+                <div class="support-card reveal">
+
+                    <div class="support-card-top">
+
+                        <div>
+                            <span class="support-small-title">
+                                CHOISIS TON MONTANT
+                            </span>
+
+                            <h3>
+                                Un petit soutien, un gros boost.
+                            </h3>
+                        </div>
+
+                        <div class="support-heart">
+                            💜
+                        </div>
+
+                    </div>
+
+
+                    <div class="support-amounts">
+
+                        <button
+                            class="support-amount"
+                            data-amount="2"
+                        >
+                            <span>2 €</span>
+                            <small>Petit coup de pouce</small>
+                        </button>
+
+
+                        <button
+                            class="support-amount"
+                            data-amount="3"
+                        >
+                            <span>3 €</span>
+                            <small>Merci pour le soutien</small>
+                        </button>
+
+
+                        <button
+                            class="support-amount"
+                            data-amount="5"
+                        >
+                            <span>5 €</span>
+                            <small>Soutien sympa</small>
+                        </button>
+
+
+                        <button
+                            class="support-amount featured"
+                            data-amount="10"
+                        >
+                            <div class="popular-badge">
+                                POPULAIRE
+                            </div>
+
+                            <span>10 €</span>
+                            <small>Gros soutien</small>
+                        </button>
+
+
+                        <button
+                            class="support-amount"
+                            data-amount="15"
+                        >
+                            <span>15 €</span>
+                            <small>Merci énormément</small>
+                        </button>
+
+
+                        <button
+                            class="support-amount"
+                            data-amount="30"
+                        >
+                            <span>30 €</span>
+                            <small>Soutien exceptionnel</small>
+                        </button>
+
+                    </div>
+
+
+                    <div class="support-custom">
+
+                        <div class="custom-label">
+
+                            <span>💎</span>
+
+                            <div>
+                                <strong>Montant personnalisé</strong>
+                                <small>
+                                    Minimum 0,30 €
+                                </small>
+                            </div>
+
+                        </div>
+
+
+                        <div class="custom-input-wrapper">
+
+                            <input
+                                type="number"
+                                id="customSupportAmount"
+                                min="0.30"
+                                step="0.01"
+                                placeholder="0,30"
+                            >
+
+                            <span>€</span>
+
+                            <button id="customSupportButton">
+                                Continuer
+                                <span>→</span>
+                            </button>
+
+                        </div>
+
+                        <p
+                            class="support-error"
+                            id="supportError"
+                        ></p>
+
+                    </div>
+
+
+                    <div class="support-footer">
+
+                        <span>🔒 Paiement via PayPal</span>
+
+                        <span>⚡ Redirection instantanée</span>
+
+                        <span>💜 Merci pour ton soutien</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL CTA -->
+        <section class="final-cta reveal">
+
+            <div class="cta-glow"></div>
+
+            <span class="section-label">
+                PRÊT À COMMENCER ?
+            </span>
+
+            <h2>
+                Ton serveur mérite
+                <span>mieux qu'un simple bot.</span>
+            </h2>
+
+            <p>
+                Ajoute S3LY_BOT et profite d'un ensemble d'outils
+                pensés pour ta communauté.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1551036612396322857&permissions=8&integration_type=0&scope=bot+applications.commands"
+                    target="_blank"
+                    class="primary-btn"
+                >
+                    Ajouter S3LY_BOT ↗
+                </a>
+
+                <a
+                    href="https://discord.gg/CSFmuNVnar"
+                    target="_blank"
+                    class="secondary-btn"
+                >
+                    Serveur support
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    <div class="logo-icon">S3</div>
+                    <span>S3LY_BOT</span>
+                </a>
+
+                <p>
+                    Le bot Discord tout-en-un pour gérer,
+                    protéger et faire grandir ta communauté.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Navigation</h4>
+
+                <a href="#home">Accueil</a>
+                <a href="#features">Fonctionnalités</a>
+                <a href="#commands">Commandes</a>
+                <a href="#security">Sécurité</a>
+                <a href="#support">Soutenir</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Communauté</h4>
+
+                <a
+                    href="https://discord.gg/CSFmuNVnar"
+                    target="_blank"
+                >
+                    Support Discord
+                </a>
+
+                <a
+                    href="https://discord.com/oauth2/authorize?client_id=1551036612396322857&permissions=8&integration_type=0&scope=bot+applications.commands"
+                    target="_blank"
+                >
+                    Ajouter le bot
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Projet</h4>
+
+                <a href="#security">Sécurité</a>
+                <a href="#commands">Commandes</a>
+                <a href="#support">Soutenir le projet</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="currentYear"></span> S3LY_BOT
+            </span>
+
+            <span>
+                Fait avec 💜 pour Discord
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <span>✓</span>
+        <p id="toastText">Action effectuée.</p>
     </div>
 
 
-    <div class="footer-bottom">
-
-        <span>
-            © <span id="year"></span> S3LY_BOT
-        </span>
-
-        <span>
-            Fait pour Discord <i>●</i>
-        </span>
-
-    </div>
-
-</footer>
+    <!-- BACK TO TOP -->
+    <button class="back-top" id="backTop">
+        ↑
+    </button>
 
 
-<div class="toast" id="toast"></div>
-
-<button class="top-button" id="topButton">↑</button>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
